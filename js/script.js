@@ -1,7 +1,7 @@
 function next_user() {
     var nombre = document.getElementById("user").value;
     localStorage.setItem("name", nombre);
-    window.location.href = 'conoc.html';
+    window.location.href = '/conoc.html';
 }
 
 //nombre del usuario//
