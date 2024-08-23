@@ -18,7 +18,7 @@ agregar_nombre();
 //conocimiento enlace//
 
 function next_pag1() {
-    window.location.href = 'conocimiento_prev/previo.html';
+    window.location.href = '/conocimiento_prev/previo.html';
     
 }
 function next_pag2() {
