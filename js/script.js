@@ -18,7 +18,7 @@ agregar_nombre();
 //conocimiento enlace//
 
 function next_pag1() {
-    window.location.href = '/conocimiento_prev/previo.html';
+    window.location.href = 'conocimiento_prev/previo.html';
     
 }
 function next_pag2() {
@@ -29,11 +29,11 @@ function next_pag2() {
 //nivel secundario//
 
 function sec1(){
-    window.location.href = '/sec1/sec1.html';
+    window.location.href = 'sec1/sec1.html';
 }
 
 function sec2(){
-    window.location.href = '/sec2/sec2.html';
+    window.location.href = 'sec2/sec2.html';
 }
 
 function sec3(){
@@ -41,25 +41,25 @@ function sec3(){
 }
 
 function sec4(){
-    window.location.href = '/sec4/sec4.html';
+    window.location.href = 'sec4/sec4.html';
 }
 
 function sec5(){
-    window.location.href = '/sec5/sec5.html';
+    window.location.href = 'sec5/sec5.html';
 }
 
 //comenzar desde 0//
 
 function s01(){
-    window.location.href = '/sec1/tes0.html';
+    window.location.href = 'sec1/tes0.html';
 }
 
 function s02(){
-    window.location.href = '/sec2/tes0.html';
+    window.location.href = 'sec2/tes0.html';
 }
 
 function s03(){
-    window.location.href = '/sec3/tes0.html';
+    window.location.href = 'sec3/tes0.html';
 }
 
 function s04(){
@@ -67,5 +67,5 @@ function s04(){
 }
 
 function s05(){
-    window.location.href = '/sec5/tes0.html';
+    window.location.href = 'sec5/tes0.html';
 }
