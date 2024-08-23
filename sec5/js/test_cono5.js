@@ -45,7 +45,7 @@ function actualizarPuntaje(opcion) {
     } else {
         //mostrarResultado();
         localStorage.setItem("puntaje", puntaje);
-        window.location.href = '../sec5/results1.html';
+        window.location.href = 'results1.html';
     }
 }
     

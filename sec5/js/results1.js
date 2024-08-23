@@ -13,11 +13,12 @@ if (puntaje >= 20) {
 
 document.getElementById('resultado').innerHTML = `Tu puntaje es de ${puntaje} , ${resultadoText}.A continuacion por favor diganos, conoce su estilo de aprendizaje?`;
 
+
 function si(){
-    window.location.href = '../sec1/aprendizaje.html'
-    
+  window.location.href = 'aprendizaje.html'
+  
 }
 
 function no(){
-  window.location.href = '../sec1/test_aprende.html'
+window.location.href = 'test_aprende.html'
 }

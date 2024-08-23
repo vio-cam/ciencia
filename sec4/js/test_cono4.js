@@ -1,39 +1,38 @@
 var preguntas = [
-    "¿Como puedes contribuir a cuidar el medio ambiente en tu escuela?",
-    "Calcular el área de un rectanguloa con base de 8cm y altua de 5cm",
-    "¿Que significa la 'eucarestía'?",
-    "¿Cual es lo esencial para la resolucion de conflictos?",
-    "¿Cuantos son los reinos princiapeles?",
-    "¿Cual es un tipo de texto?",
-    "¿Elije un verbo en ingles?",
-    "En que se basa la tecnica Da Vinci "
+    "¿Cual es la mejor estrategia para administrar un presupuesto mensual?",
+    "Calcular el valor de 'x' en la ecucacion cuadratica: x² - 5x + 6 = 0",
+    "¿Que festividad cristiana celebra la llegada de Jesús al mudno?",
+    "¿Cuando fue aprobado la CPP?",
+    "¿Que es la mitosis y cual es su proposito?",
+    "¿Cual NO es una figura literaria?",
+    "¿Cuando se usa does?",
+    "¿Que se necesita para elaborar un storyboard?'"
 ];
 
 var opciones = [
-    ["Usar contenedores de reciclaje","Mantener las ventas abiertas", "Utilicar mas productos de un solo uso"],
-    ["13cm²","40cm²","25cm²"],
-    ["un ritual de purificación","la celebracion de la última cena","una ceremonía de confirmación"],
-    ["Dejarse mandar por sus emociones","Culparle al otro"," Manejar nuestras emociones"],
-    ["3","4","5"],
-    ["literario","persuasivo","todas las anteriores"],
-    ["quiclly","Run","beautiful"], 
-    ["en combinar cosas ya hechas","en hacer un bosquejo","hacer la mona lisa"]
+    ["Ahorrar solo cuando sobra dinero","Registrar todos los ingresos y gastos", "Gastar"],
+    ["(x-3)(x-2)","(x-6)(x+1)","(x+5)(x-1)"],
+    ["pentecostés","Navidad","Cuaresma"],
+    ["1993","1990","1985"],
+    ["la division celular para producir gametos","la division celular que produce celulas hijas identicas","el proceso por el cual las celulas se especializan"],
+    ["Simil","Metafora","expresivo"],
+    ["he,she and it","i,you,they","my,your,our"], 
+    ["guión","personajes","Todas las anteriores"]
 ];  
 
 var puntajePorOpcion = [
-    [4,0,0],
+    [0,4,0],
+    [2,0,0],
     [0,2,0],
-    [0,2,0],
+    [2,0,0],
+    [0,4,0],
     [0,0,2],
-    [0,0,4],
-    [0,0,2],
-    [0,2,0],
-    [2,0,0]
+    [2,0,0],
+    [0,0,2]
 ];
 
 var puntaje = 0;
 var i = 0;
-
 
 
 function actualizarPuntaje(opcion) {
@@ -45,10 +44,10 @@ function actualizarPuntaje(opcion) {
     } else {
         //mostrarResultado();
         localStorage.setItem("puntaje", puntaje);
-        window.location.href = '../sec2/results1.html';
+        window.location.href = 'results1.html';
     }
 }
-
+    
     function siguientePregunta() {
         document.getElementById("pregunta").innerHTML = preguntas[i];
         document.getElementById("op1").innerHTML = opciones[i][0];

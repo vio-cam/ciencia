@@ -48,7 +48,7 @@ var i = 0;
         } else {
             //mostrarResultado();
             localStorage.setItem("puntaje", puntaje);
-            window.location.href = '../conocimiento_prev/results.html';
+            window.location.href = '../sec4/results.html';
         }
     }
     
