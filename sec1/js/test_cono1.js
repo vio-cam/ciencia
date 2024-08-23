@@ -44,7 +44,7 @@ var i = 0;
         } else {
             //mostrarResultado();
             localStorage.setItem("puntaje", puntaje);
-            window.location.href = '../sec1/results1.html';
+            window.location.href = 'results1.html';
         }
     }
     
