@@ -1,10 +1,12 @@
 body{
     background-color: rgb(149, 190, 232);
+
 }
 
 .cont1{
     border: 2px solid;
-    margin: 30px 210px;
+    margin: 30px 22%;
+    flex-wrap: wrap;
     width: 600px;
     height: 365px;
     border-radius: 10px;
