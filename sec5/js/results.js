@@ -4,7 +4,7 @@ var est_apren = '';
 if (puntaje <= 19) {
     est_apren = "tu aprendizaje es multimodal";
     function continuar(){
-        window.location.href = 'tipos de aprendizaje/mutimodal.html';
+        window.location.href = 'tipos de aprendizaje/multimodal.html';
     }
 } else if (puntaje >= 8) {
   est_apren = "tu aprendizaje es auditivo";
