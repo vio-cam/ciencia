@@ -1,7 +1,7 @@
 var puntaje = localStorage.getItem('puntaje_apr');
 var est_apren = '';
 
-if (puntaje <= 19) {
+if (puntaje >= 19) {
     est_apren = "tu aprendizaje es multimodal";
     function continuar(){
         window.location.href = 'tipos de aprendizaje/multimodal.html';
