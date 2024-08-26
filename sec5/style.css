@@ -16,17 +16,19 @@ body{
     border-color:#3c4f62;
 }
 
-.boton{
-    background-color:#e1dfa2;
-    color: rgb(110 90 76);
-    display: block;
-    font-family: "Unkempt", cursive;
+.boton {
+    background-color: #e1dfa2;
+    color: rgb(110, 90, 76);
+    font-family: 'Unkempt', cursive;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
     border-radius: 10px;
-    margin-left: 450px;
+    padding: 10px 20px; /* Agrega padding en lugar de margen para ajustar tamaño */
+    display: inline-block; /* Ajuste automático del ancho */
+    margin: 20px 70%; /* Centrado automático horizontal */
 }
+
 
 .boton:hover{
     background-color: #f0c845;
@@ -223,4 +225,26 @@ h1{
     font-size: 20px;
     margin-left: 30px;
     margin-right: 30px;
+}
+
+@media (max-width: 768px) {
+    .cont1, .boton, .ing_usu, .boton_cono, .botonR, .opciones {
+        width: 95%; /* Ancho completo en pantallas pequeñas */
+        margin: 10px auto; /* Ajusta márgenes para pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 40px; /* Ajusta tamaño de fuente en pantallas pequeñas */
+        padding: 5px; /* Ajusta padding */
+    }
+
+    .descripcion {
+        font-size: 18px; /* Ajusta tamaño de fuente */
+        padding: 5px; /* Ajusta padding */
+    }
+
+    .boton, .boton_cono, .botonR, .opciones {
+        font-size: 18px; /* Ajusta tamaño de fuente */
+        padding: 8px 16px; /* Ajusta padding */
+    }
 }

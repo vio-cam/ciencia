@@ -1,264 +1,180 @@
-body{
-    background-color: rgb(149, 190, 232);
 
+body {
+    background-color: rgb(149, 190, 232);
+    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el tamaño total del elemento */
 }
 
-.cont1{
-    border: 2px solid;
-    margin: 30px 25%;
-    margin-right: auto;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 600px;
-    height: 100%;
-    max-height: 600px;
+/* Contenedor principal */
+.cont1 {
+    border: 2px solid #3c4f62;
+    margin: 30px auto; /* Centrado automático horizontal */
+    width: 90%; /* Ajuste del ancho */
+    max-width: 600px; /* Limita el ancho máximo */
+    height: auto; /* Ajuste automático de altura */
+    max-height: 500px; /* Limita la altura máxima */
     border-radius: 10px;
     background-color: aliceblue;
-    border-color:#3c4f62;
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total */
 }
 
-h1{
-    font-family: Luckiest Guy;
-    margin-top: 0px;
+/* Encabezado */
+h1 {
+    font-family: 'Luckiest Guy', cursive;
+    margin-top: 0;
     font-size: 50px;
     text-align: center;
-    border: 2px solid;
-    border-color:#3c4f62;
-    background-color:#3c4f62;
+    border: 2px solid #3c4f62;
+    background-color: #3c4f62;
+    color: white; /* Agrega color al texto para contraste */
+    padding: 10px; /* Agrega padding para espacio interno */
+    box-sizing: border-box; /* Asegura que el padding y el border se incluyan en el tamaño total del elemento */
 }
 
-.ing_usu{
+/* Estilo de elementos de ingreso de usuario */
+.ing_usu {
     text-align: center;
-    margin-left: 25%;
     font-size: 25px;
-    border: 2px solid;
+    border: 2px solid black;
     border-radius: 10px;
-    border-color:black;
-    display: block;
+    display: inline-block; /* Ajuste automático del ancho */
+    padding: 5px; /* Agrega padding interno */
+    margin: 5px 25%; /* Centrado automático horizontal */
 }
 
-.ing_usu:hover{
-    background-color:#c5cfd8;
-    color: rgb(118,118,118);
-    border-color:black;
+/* Estilo de ingreso de usuario en hover */
+.ing_usu:hover {
+    background-color: #c5cfd8;
+    color: rgb(118, 118, 118);
 }
 
-.descripcion{
+/* Estilo de descripción */
+.descripcion {
     text-align: justify;
-    padding: 2px 20px;
-    font-family: Concert One;
-    font-size:20px;
+    padding: 10px; /* Ajuste del padding */
+    font-family: 'Concert One', cursive;
+    font-size: 20px;
     color: rgb(80, 82, 82);
 }
 
-.boton{
-    background-color:#e1dfa2;
-    color: rgb(110 90 76);
-    display: block;
-    font-family: "Unkempt", cursive;
+/* Estilo de botón */
+.boton {
+    background-color: #e1dfa2;
+    color: rgb(110, 90, 76);
+    font-family: 'Unkempt', cursive;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
     border-radius: 10px;
-    margin-left: 450px;
+    padding: 10px 20px; /* Agrega padding en lugar de margen para ajustar tamaño */
+    display: inline-block;
+    align-items: flex-end; /* Ajuste automático del ancho */
+    margin: 10px 75%; /* Centrado automático horizontal */
 }
 
-.boton:hover{
+/* Estilo del botón en hover */
+.boton:hover {
     background-color: #f0c845;
     color: rgb(190, 94, 4);
 }
 
-/*pagina de conocimiento*/
-
-.boton_cono{
-    background-color:#c5cfd8;
-    color: rgb(0 0 0);
-    display: block;
-    font-family: "Unkempt", cursive;
+/* Botones con diferentes clases */
+.boton_cono, .botonR, .opciones {
+    background-color: #c5cfd8;
+    color: rgb(0, 0, 0);
+    font-family: 'Unkempt', cursive;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
     border-radius: 10px;
-    margin-left: 100px;
-    margin-bottom: 5px;
-    height: 50px;
-    width: 400px
+    padding: 10px; /* Ajuste del padding */
+    display: block;
+    margin: 20px auto; /* Centrado automático horizontal */
+    width: 90%; /* Ajuste del ancho */
+    max-width: 300px; /* Limita el ancho máximo */
 }
 
-/*Nivel secundario*/
-.boton_Sec1{
+/* Estilo de los botones de nivel secundario */
+.boton_Sec1, .boton_Sec2 {
     display: flex;
-    margin-left: 35px;
+    justify-content: center; /* Centrado horizontal */
+    margin: 20px auto; /* Centrado automático horizontal */
 }
 
-.boton_Sec2{
-    display: flex;
-    margin-left: 20%;
-}
-
-.botons1{
-    background-color:#c5cfd8;
-    color: rgb(0 0 0);
-    display: block;
-    font-family: "Unkempt", cursive;
+/* Botones con diferente clase */
+.botons1, .botons2, .botons3, .botons4, .botons5 {
+    background-color: #c5cfd8;
+    color: rgb(0, 0, 0);
+    font-family: 'Unkempt', cursive;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
     border-radius: 10px;
     height: 40px;
     width: 150px;
-    margin-left: 15px;
+    display: inline-block;
+    margin: 10px; /* Ajuste del margen */
 }
 
-.botons1:hover{
-    background-color: rgb(41, 49, 117);
-    color: white;
-}
+/* Estilo en hover para los botones */
+.botons1:hover { background-color: rgb(41, 49, 117); color: white; }
+.botons2:hover { background-color: rgb(108, 117, 41); color: white; }
+.botons3:hover { background-color: rgb(117, 74, 41); color: white; }
+.botons4:hover { background-color: rgb(41, 103, 117); color: white; }
+.botons5:hover { background-color: rgb(117, 41, 41); color: white; }
 
-.botons2{
-    background-color:#c5cfd8;
-    color: rgb(0 0 0);
-    display: block;
-    font-family: "Unkempt", cursive;
-    text-align: center;
-    text-decoration: none;
+/* Estilo de preguntas */
+.pregunta {
+    font-family: 'Unkempt', cursive;
     font-size: 20px;
-    border-radius: 10px;
-    height: 40px;
-    width: 150px;
-    margin-left: 15px;
 }
 
-.botons2:hover{
-    background-color: rgb(108, 117, 41);
-    color: white;
-}
-
-.botons3{
-    background-color:#c5cfd8;
-    color: rgb(0 0 0);
-    display: block;
-    font-family: "Unkempt", cursive;
-    text-align: center;
-    text-decoration: none;
+/* Estilo de resultado */
+.resultado {
+    margin-top: 10px;
+    margin-left: 25px;
     font-size: 20px;
-    border-radius: 10px;
-    height: 40px;
-    width: 150px;
-    margin-left: 15px;
+    font-family: 'Unkempt', cursive;
 }
 
-.botons3:hover{
-    background-color: rgb(117, 74, 41);
-    color: white;
-}
+/* Adaptaciones para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+    .cont1, .boton, .ing_usu, .boton_cono, .botonR, .opciones {
+        width: 95%; /* Ancho completo en pantallas pequeñas */
+        margin: 10px auto; /* Ajusta márgenes para pantallas pequeñas */
+    }
 
-.botons4{
-    background-color:#c5cfd8;
-    color: rgb(0 0 0);
-    display: block;
-    font-family: "Unkempt", cursive;
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px;
-    border-radius: 10px;
-    height: 40px;
-    width: 150px;
-    margin-left: 15px;
-}
+    h1 {
+        font-size: 40px; /* Ajusta tamaño de fuente en pantallas pequeñas */
+        padding: 5px; /* Ajusta padding */
+    }
 
-.botons4:hover{
-    background-color: rgb(41, 103, 117);
-    color: white;
-}
+    .descripcion {
+        font-size: 18px; /* Ajusta tamaño de fuente */
+        padding: 5px; /* Ajusta padding */
+    }
 
-.botons5{
-    background-color:#c5cfd8;
-    color: rgb(0 0 0);
-    display: block;
-    font-family: "Unkempt", cursive;
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px;
-    border-radius: 10px;
-    height: 40px;
-    width: 150px;
-    margin-left: 15px;
-}
-
-.botons5:hover{
-    background-color: rgb(117, 41, 41);
-    color: white;
-}
-
-/*test de conocimiento*/
-
-.pregunta{
-    font-family: "Unkempt",cursive;
-
-}
-
-.opciones{
-    background-color:#c5cfd8;
-    color: rgb(0 0 0);
-    display: block;
-    font-family: "Unkempt", cursive;
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px;
-    border-radius: 10px;
-    margin-left: 100px;
-    margin-bottom: 5px;
-    height: 50px;
-    width: 400px
-}
-
-.resultado{
-    margin-top: 2px;
-    margin-left: 25px ;
-    font-size: 20px;
-    font-family: "Unkempt", cursive;
-}
-
-/*aprendizaje*/
-.botonR{
-    background-color:#c5cfd8;
-    color: rgb(0 0 0);
-    display: block;
-    font-family: "Unkempt", cursive;
-    text-align: center;
-    text-decoration: none;
-    font-size: 20px;
-    border-radius: 10px;
-    margin-left: 100px;
-    margin-bottom: 5px;
-    height: 50px;
-    width: 400px
-}
-
-/*tipo de aprendizaje*/
-
-.boton_a{
-    display: flex;
-    margin-left: 20%;
-}
-
-.boton_a1{
-    display: flex;
-    margin-left: 20%;
+    .boton, .boton_cono, .botonR, .opciones {
+        font-size: 18px; /* Ajusta tamaño de fuente */
+        padding: 8px 16px; /* Ajusta padding */
+    }
 }
 
 .botonA{
-    background-color:#c5cfd8;
-    color: rgb(0 0 0);
-    display: block;
-    font-family: "Unkempt", cursive;
+    background-color: #c5cfd8;
+    color: rgb(0, 0, 0);
+    font-family: 'Unkempt', cursive;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
     border-radius: 10px;
     height: 40px;
     width: 150px;
-    margin-left: 40px;
+    display: inline-block;
+    margin: 10px; /* Ajuste del margen */
 }
 
+.boton_a1, .boton_a {
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    margin: 20px auto; /* Centrado automático horizontal */
+}
