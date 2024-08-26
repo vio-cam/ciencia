@@ -4,14 +4,18 @@ body{
 
 .cont1{
     border: 2px solid;
-    margin: 30px 22%;
+    margin: 30px 25%;
+    margin-right: auto;
     flex-wrap: wrap;
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    max-height: 600px;
     border-radius: 10px;
     background-color: aliceblue;
     border-color:#3c4f62;
 }
+
 
 .boton{
     background-color:#e1dfa2;
